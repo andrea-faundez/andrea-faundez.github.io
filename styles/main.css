@@ -1,0 +1,79 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.smaller-image {
+  width: 350px;
+}
+
+html {
+	 box-sizing: border-box;
+   background-color: #54aacd;
+}
+
+body {
+	 min-height: 100vh;
+   max-width: 500px;
+   background-color: #54aacd;
+   color: #FFF;
+   margin: 0 auto;
+   font-family: sans-serif;
+}
+
+#navebar{ 
+   position: fixed;
+   top: 0px;
+   width: 100%
+   color: #226580;
+}
+
+nav ul {
+   margin: 0px;
+   padding: 5px 0px 5px 30px;
+   background-color: #226580;
+}
+
+nav li {
+   display: inline;
+   margin-right: 20px;
+   color: #FFF;
+   background-color: #226580;
+}
+
+h1 {
+   font-size: 50px;
+   margin: 30px;
+   font-family: 'Tangerine';
+   color: white;
+   text-align: center;
+}
+
+h2 {
+   font-size: 25px;
+   font-weight: normal;
+   margin: 30px;
+   text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+   font-weight: lighter;
+   margin: 30px;
+}
+
+p { }
+
+footer{ 
+   border-top: 2px solid #dbe2e8;
+   margin-top: 4em;
+   padding: 2em;
+   text-align: center;
+}
+
+
