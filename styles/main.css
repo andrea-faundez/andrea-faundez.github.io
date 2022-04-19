@@ -1,55 +1,97 @@
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Tangerine">
+html {
+  margin: 0px;
+  outline: 0px;
+}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+body {
+  background-color: #9ec3d2;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 15pt;
+}
+
+#index {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 40px 1fr 350px 50px;
+  grid-template-areas: 
+      "head img"
+      "main img"
+      "foot foot"
+}
+
+#index > header {
+  grid-area: head;
+  margin-top: 5em;
+  margin-left: 1.5em;
+}
+#index > main {
+  grid-area: main;
+  margin-top: 8em;
+  margin-left: 2em;
+}
+#index > img {
+  grid-area: img;
+  margin-top: 5em;
+  margin-left: 3em;
+}
+#index > footer {
+  grid-area: foot;
+  background-color: #67a0b7;
 }
 
 .smaller-image {
   width: 350px;
+  margin: auto;
+  border-radius: 3px;
 }
 
-html {
-	 box-sizing: border-box;
-   background-color: #54aacd;
+#navbar {
+  display:
+  background-color: #67a0b7;
+  position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-top: 0px;
+  margin-bottom: 9em;
+  border-bottom: 2px solid #FFF;
+  width: auto;
+}  
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
 }
 
-body {
-	 min-height: 100vh;
-   max-width: 500px;
-   background-color: #54aacd;
-   color: #FFF;
-   margin: 0 auto;
-   font-family: sans-serif;
-}
-
-#navebar{ 
-   position: fixed;
-   top: 0px;
-   width: 100%
-   color: #226580;
+#navbar a:hover {
+  background-color: #9ec3d2;
+  color: black;
 }
 
 nav ul {
-   margin: 0px;
-   padding: 5px 0px 5px 30px;
-   background-color: #226580;
+   float: inline-start;
+   list-style: none;
+   margin: 0px 5px 10px;
+   padding: 0px;
+   text-align: right;
 }
 
 nav li {
    display: inline;
    margin-right: 20px;
    color: #FFF;
-   background-color: #226580;
 }
 
 h1 {
    font-size: 50px;
    margin: 30px;
-   font-family: 'Tangerine';
+   font-family: 'Sacramento', cursive;
    color: white;
    text-align: center;
 }
@@ -62,17 +104,29 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+   font-size: 20px;
    font-weight: lighter;
    margin: 30px;
 }
 
-p { }
+p { 
+  font-family: 'Lato'; 
+  color: #000
+}
+
+.read-more {
+  color: #02ccba;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 footer{ 
    border-top: 2px solid #dbe2e8;
-   margin-top: 4em;
-   padding: 2em;
+   margin-top: 17em;
+   padding-top: 1em;
+   padding-bottom: 2em;
    text-align: center;
 }
 
