@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My EDA Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="/Users/andreafaundez/dev-academy/andrea-faundez.github.io/styles/main.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular?styles=16714,16715,16710,16711,16709,16712,16713" rel="stylesheet">
+  </head>
+  
+  <body class="article-display">
+    <nav id="navbar" class="nav">
+      <ul>
+        <li><a target="_self" href="file:///Users/andreafaundez/dev-academy/andrea-faundez.github.io/index.html">Home</a></li>
+        <li><a target="_self" href="file:///Users/andreafaundez/dev-academy/andrea-faundez.github.io/blog/tech-blog.html">Tech Blog</a></li>
+        <li><a target="_self" href="file:///Users/andreafaundez/dev-academy/andrea-faundez.github.io/blog/cultural-blog.html">Cultural Blog</a></li>
+        <li><a target="_self" href="file:///Users/andreafaundez/dev-academy/andrea-faundez.github.io/blog/about-me.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h2 class="h2">Unboxing the CSS Box Model</h2>
+    </header>
+
+    <main  class="p">
+      <p>
+        When laying out a page, the browser represents each element as a box with different areas, thus “the css box model”. 
+        These areas determine the space surrounding each element and how that space interacts with other elements in your page. 
+        Every HTML element has four areas: content, padding, border and margin. The  image below illustrates the areas in the 
+        css box model:<br><br>
+      </p>
+
+      <img class="bigger-image" src="/Users/andreafaundez/dev-academy/andrea-faundez.github.io/img/css-box.jpg" alt="css box model drawing"><br><br>
+      
+      <p>Let's have a look at each area of the model:</p>
+
+      <ul class="ul">
+        <ls><span style="text-decoration: underline";>Content:</span> The content area is the element itself (text, image, video player). Its dimensions 
+          are defined by the element's width and height. These dimensions are given by default but they can be customized 
+          with the widths and high properties.<br><br></ls>
+
+          <ls><span style="text-decoration: underline";>Padding:</span> An element's padding area is the space between its content and its border. The CSS 
+          padding properties are used to generate space around an element's content, inside of any defined borders. Padding 
+          values are set using lengths, percentages, or the inherited keyword. Padding cannot accept negative values. The 
+          initial, or default, value for all padding properties is 0.<br>
+
+          <br>The values can be set by the padding-top, padding-right, padding-left and padding-bottom properties or by the 
+          shorthand padding property. When using the shorthand padding property you can specify one, two, three or four values.<br><br>
+
+           <ol>
+            <ls>- One value: sets the same padding in all 4 directions (top, right, bottom and left)<br></ls>
+            <ls>- Two values: the first value sets the top and bottom padding, and the second value sets the right and left.<br></ls>
+            <ls>- Three values: first one for top, second ones for right and left, and the third one for bottom.<br></ls>
+            <ls>- Four values: the values represent the top, right, left and bottom padding.<br><br></ls>
+           </ol>
+
+           <br>Padding can be used to make an element grow or shrink. Here is an example of how padding affects the content's size:<br><br>
+
+           <img class="bigger-image" src="/Users/andreafaundez/dev-academy/andrea-faundez.github.io/img/padding-example.jpg" alt="examples of padding extending the element"><br><br>
+           
+           A word of warning, without a background color and a border it is quite difficult to notice the padding in action. You just will see your piece of text moving 
+           up and down or from side to side, almost as if you were adjusting the margin instead.<br><br>
+        </ls>
+
+        <ls><span style="text-decoration: underline";>Border:</span> The border is the limit between the padding and the margin. It can be made explicit to enhance
+          an element by styling the border in a certain way, changing its color, thickness and style (solid, dotted, dashed, double, 
+          groove, ridge, inset, outset, none or hidden).<br><br>
+        </ls>
+
+        <ls><span style="text-decoration: underline";>Margin:</span>The margin property defines the outermost portion (area) of the box model, creating space around 
+          an element, outside of any defined borders. The margin property is used to separate an element from its neighbor elements. 
+          The size of the margin area is determined by the margin-top, margin-right, margin-bottom, margin-left, and shorthand margin 
+          properties. Margins are set using lengths, percentages, or the keyword auto and can have negative values.
+        </ls>
+      </ul>
+    
+      <p>A good way to think about these areas and how they interact with each other, is to imagine you are decorating a wall (your page) with photographs (your content). 
+        You could place a mat (padding) behind  a photo,  you can frame (border) another photo, and you can put them in different locations (margin) relating to each other 
+        and the wall. Here are a few examples:
+      </p><br>
+
+      <section id="photo-gallery">
+        <div id=photo-1>
+          <img class="long-image" src="/Users/andreafaundez/dev-academy/andrea-faundez.github.io/img/padding-situations.jpg" alt="three photo frames with different mats">
+        </div>
+
+        <div id="photo-2">
+          <img class="long-image" style="margin-top: 20px;" src="/Users/andreafaundez/dev-academy/andrea-faundez.github.io/img/border-examples.jpg" alt="three photo with different frames">
+        </div>
+
+        <div id="text-1" style="margin-left: 50px; margin-top: -60px;">
+          <p>
+            The mat represents the padding. You can<br> 
+            choose to leave your padding at its statring<br>
+            point, which is 0px like in the last photo.
+          </p>
+        </div>
+
+        <div id="text-2" style="margin-left: 50px; margin-top: -60px;">
+          <p>
+            The frame represents the border. You can <br>
+            frame your picture in any way you like.<br> 
+            No frame is also an option.
+          </p> 
+        </div>
+
+        <div id="photo-3">
+          <img class="medium-image" src="../img/margin-example-1.jpg" alt="4 photo frames with the same argin">
+        </div>
+
+        <div>
+          <img class="medium-image" src="../img/margin-example-2.jpg" alt="4 photo frames with different margins from each other">
+        </div>
+
+        <div id="text-3" style="margin-left: 20px; margin-top: -35px;">
+          <p>The photo frames have the same istance between them.</p>
+        </div>
+
+        <div id="text-4" style="margin-left: 15px; margin-top: -35px;">
+          <p>By changing the margis the grame change position within the wall.</p>
+        </div>
+      </section>
+
+      <p style="margin-top: -80px;">I hope this was useful!</p>
+    </main>
+
+    <footer class="footer-article">An EDA Kōtare 2022 project</footer>  
+    <!-- this is a comment. -->
+  
+  </body>
+</html>
