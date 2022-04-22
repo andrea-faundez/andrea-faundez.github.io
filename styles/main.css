@@ -126,6 +126,21 @@ nav li {
   margin-left: 1%;
 }
 
+.credits {
+  font-size: 0.9em;
+  margin-top: 0.2px;
+  color: rgb(140, 136, 136)
+}
+
+.credits a {
+  color: #7b7e7e;
+}
+
+.credits a:hover {
+  color: #bbbebe;
+}
+
+
 /** Text settings **/
 h1 {
    font-size: 5vw;
@@ -153,6 +168,7 @@ p {
   color: #5e6464;
 }
 
+
 /** Tech Blog display (grid) **/
 #inner-grid-tech {
   display: grid;
@@ -166,6 +182,34 @@ p {
 
 #inner-grid > article {
   padding: 2vw;
+}
+
+.read-more {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #cb8f8d;
+  font-family: 'Inter', sans-serif;
+}
+
+.read-more a {
+  color: #cb8f8d;
+}
+
+.read-more a:hover {
+  color: #5e6464;
+}
+
+.article-title{
+  color: #d9b85c;
+}
+
+.article-title a{
+  color: #d9b85c;
+}
+
+.article-title a:hover {
+  color:#72a892
 }
 
 
@@ -203,20 +247,6 @@ p {
   margin-left: 7em;
 }
 
-.credits {
-  font-size: 0.9em;
-  margin-top: 0.2px;
-  color: rgb(140, 136, 136)
-}
-
-.credits a {
-  color: #7b7e7e;
-}
-
-.credits a:hover {
-  color: #bbbebe;
-}
-
 .article-name {
   margin-bottom: 0.3em;
   text-align: left;
@@ -227,14 +257,6 @@ p {
 .article-description {
   margin-top: -0.3em;
   margin-bottom: 0.5em; 
-}
-
-.read-more {
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #cb8f8d;
-  font-family: 'Inter', sans-serif;
 }
 
 
