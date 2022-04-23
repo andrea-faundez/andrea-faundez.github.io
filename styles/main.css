@@ -163,8 +163,12 @@ h2 {
 
 h3 {
    font-size: 25px;
-   font-weight: lighter;
-   text-align: center;
+   font-weight:bold;
+}
+
+.h3 {
+  font-weight:lighter;
+  text-align: center;
 }
 
 p { 
@@ -197,36 +201,23 @@ p {
 
 
 /** Cultural Blog display (grid) **/
-.blog {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
-}
-.blog-post {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 100px;
- height: 30em;
-}
-
 .section {
   grid-column-start: 1;  
 }
 
 .article-1 {
   grid-column-start: 2;
+  margin-left: 20px;
 }
 
 .article-2 {
   grid-column-start: 1;
+  margin-left: 20px;
 }
 
 .article-3 {
   grid-column-start: 2;
+  margin-left: 20px;
 }
 
 
