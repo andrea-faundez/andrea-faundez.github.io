@@ -43,6 +43,7 @@ body {
 #inner-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
   width: 100%;
   max-width: 1280px;
@@ -187,8 +188,11 @@ p {
 }
 
 
-/** Tech Blog display (grid) **/
+/** Blogs display (grid) **/
 
+.article {
+  margin-right: 20px;
+}
 .article-name {
   margin:10px 20px 5px;
   text-align: left;
@@ -210,26 +214,6 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
-
-/** Cultural Blog display (grid) **/
-.section {
-  grid-column-start: 1;  
-}
-
-.article-1 {
-  grid-column-start: 2;
-  margin-left: 20px;
-}
-
-.article-2 {
-  grid-column-start: 1;
-  margin-left: 20px;
-}
-
-.article-3 {
-  grid-column-start: 2;
-  margin-left: 20px;
-}
 
 
 /** articles display **/
