@@ -8,8 +8,9 @@ body {
   color: #5e6464;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  
 }
+
+
 /** Index display (grid)**/
 #body-grid {
   display: grid;
@@ -63,6 +64,7 @@ body {
   text-align: center;
 }  
 
+
 #navbar a {
   color: #b464a8;
   text-align: center;
@@ -93,6 +95,22 @@ nav li {
    text-align: center;
 }
 
+@media (max-width: 350px) {
+  nav li {
+    font-size: 17px;
+    text-align: left;
+  }
+  footer {
+    font-size: 17px;
+  }
+  .home-image {
+    width: 300px;
+  }
+  .smaller-image {
+    width: 300px;
+  }
+}
+
 
 /** image settings **/
 .home-image {
@@ -108,6 +126,7 @@ nav li {
   border-radius: 5%;
   margin-left: 20px;
 }
+
 
 .bigger-image {
   width: 65vw;
