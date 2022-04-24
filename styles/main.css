@@ -116,8 +116,8 @@ nav li {
   }
   .home-image {
     width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: -10px;
   }
   .smaller-image {
     width: 300px;
@@ -177,8 +177,7 @@ nav li {
 /** Text settings **/
 h1 {
    font-size: 50px;
-   font-family: 'Brandon Grotesque Regular', sans-serif;
-   font-weight: 200;
+   font-weight: bold;
    margin: 4%;
    color: #d9b85c;
    text-align: center;
