@@ -61,7 +61,6 @@ body {
 /** navbar settings **/
 #navbar {
   margin-top: -3px;
-  text-align: center;
 }  
 
 
@@ -69,8 +68,8 @@ body {
   color: #b464a8;
   text-align: center;
   text-decoration: none;
-  padding: 5px;
-  text-align: center;
+  padding: 4px;
+  
 }
 
 #navbar a:hover {
@@ -78,26 +77,38 @@ body {
   color: #5e6464;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  
 }
 
 nav ul {
    list-style: none;
    font-family: 'Inter', sans-serif;
-   text-align: center;
 }
 
 nav li {
    display: inline;
    color: #b464a8;
    font-family: 'Inter', sans-serif;
-   padding: 5px;
+   padding: 4px;
    text-align: center;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   nav li {
-    font-size: 17px;
+    font-size: 16px;
+    text-align: left;
+    padding: 4px;
+  }
+  nav ul {
+    text-align: left;
+    padding: 4px;
+  }
+  #navbar {
+    text-align: left;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  #body-grid > nav {
     text-align: left;
   }
   footer {
@@ -105,6 +116,7 @@ nav li {
   }
   .home-image {
     width: 300px;
+    margin-left: 20px;
   }
   .smaller-image {
     width: 300px;
