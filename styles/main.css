@@ -140,12 +140,10 @@ nav li {
   margin-left: 20px;
 }
 
-
 .bigger-image {
   width: 65vw;
-  margin: auto;
   border-radius: 2%;
-  margin-left: 5%;
+  margin-left: 15%;
 }
 
 .long-image {
