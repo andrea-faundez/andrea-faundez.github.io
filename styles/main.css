@@ -143,7 +143,7 @@ nav li {
 .bigger-image {
   width: 65vw;
   border-radius: 2%;
-  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .long-image {
@@ -266,9 +266,9 @@ p {
 }
 
 ls {
-  list-style:disc;
+  list-style: disc;
   list-style-position: outside;
-  display:list-item;
+  display: list-item;
 }
 
 .explanation {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My EDA Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://andrea-faundez.github.io/styles/main.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.cdnfonts.com/css/brandon-grotesque-regular?styles=16714,16715,16710,16711,16709,16712,16713" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  </head>
+  
+  <body id="body-grid">
+    <nav id="navbar" class="nav">
+      <ul>
+        <li><a target="_self" href="https://andrea-faundez.github.io/index.html">Home</a></li>
+        <li><a target="_self" href="https://andrea-faundez.github.io/blog/tech-blog.html">Tech Blog</a></li>
+        <li><a target="_self" href="https://andrea-faundez.github.io/blog/cultural-blog.html">Cultural Blog</a></li>
+        <li><a target="_self" href="https://andrea-faundez.github.io/blog/about-me.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header class="h2">
+        <h2>Javascript and the DOM</h2>
+      </header>
+
+      <article class="article-text">
+        <h3>An analogy to describe the differences between HTML and CSS</h3>
+
+        <p>
+          HTML is like the bricks and glue that a builder uses to build a house. CSS is the plans made by the architect that 
+          guide the construction process. They specify how wide and high the house will be, how many rooms it will have, 
+          where each room will be located, the distance between each door and window, the floor, ceiling and wall materials 
+          and colors, etc. Without the design, you just have a very basic and ugly cube that can serve as shelter but no one 
+          would be proud to live in it.<br><br> 
+        </p>
+
+        <h3>Explain control flow and loops using an example process from everyday life</h3>
+
+        <p>
+          Control flow in JavaScript is how the computer runs code. It starts from the first line at the top and ends at the 
+          last line at the bottom, unless it hits a statement that changes the normal flow. One of these statements can be a 
+          loop.<br><br>Loops are iteration statements - repetitions of a process -  that will keep running until they meet a 
+          requirement that makes them stop.<br><br>Think about mopping the floor. You start from one end of the room and make 
+          your way to the other end using the same moves. But in the middle of this process you encounter a dried stain of 
+          peanut butter. You wouldn't just pass the mop over it once and keep on going. No. If you are a person that cares for 
+          cleanliness you would repeat your mopping movements on the nasty little stain over and over again until it's gone. 
+          Then you would proceed with the rest of the room. In other words, you would loop the peanut butter stain until you 
+          have nothing else to loop in. In a Javascript, the loop's condition to stop looping is usually reaching a predetermined 
+          value.<br><br>
+        </p>
+
+        <h3>Describe what the DOM is and an example of how you might interact with it.</h3>
+
+        <p>
+          The DOM is a representation of how the browser reads and interacts with your code (HTML and CSS). Everything in the 
+          DOM, every tag, element, attribute, etc., is interpreted as a node. The DOM connects these nodes, forming what looks 
+          like tree branches. These formations create different kinds of relationships between the nodes, where nodes are parents, 
+          children and siblings in relation to other nodes.<br><br>  
+        </p>
+  
+        <img class="bigger-image" src="../img/DOM-Tree.jpg" alt="the DOM tree"><br><br>
+        
+        <p>
+          You can navigate the DOM and access its different nodes using various techniques. One of them is <strong>getElementById()</strong>. 
+          Since IDs are required to be unique, this method returns one element whose id property matches the specified id in the string. 
+          So it's a very efficient method to find elements.<br><br>If we type <strong>document.getElementById(“id-name”)</strong> the browser 
+          will run through all the code until it finds its match. Once we have the element we can manipulate it however we want. One way to do 
+          this is with the <strong>innerHTML</strong> property. This property allows us to change the HTML content of an element with the id specified 
+          in the getElementBtId method. In the example below we add the text “Agatha Christie” to the div with the id Author.<br><br>
+        </p>
+        
+        <img class="bigger-image" src="../img/getElementById.jpg" alt="code that shows an example of how to get an element by id"><br><br>
+
+        <h3>Explain the difference between accessing data from arrays and objects.</h3>
+
+        <p>
+          Objects and arrays are special types of data. Objects are used to represent a “thing” that has a set of characteristics. That thing could be 
+          potentially anything - a person, a book, a movie, a lamp, etc. The characteristics of an object are called properties and they consist of a 
+          key and a value. An object can have as many properties as needed.<br><br>
+        </p>
+
+        <img class="bigger-image" src="../img/objectSyntaxEg.jpg" alt="code that shows the syntax of an object and an example"><br><br>
+        
+        <p>We access the properties of an object through its keys. We can do that in two ways: calling the object key with a dot, or putting the key 
+          inside square brackets and in quotation marks.<br><br>
+        </p>
+        
+        <img class="bigger-image" src="../img/accessingArray.jpg" alt="examples of accesing an array using dots and square brackets"><br><br>
+             
+        <p>
+          Arrays are a type of variables that store a list of values in an ordered sequence. These values are organized by their position in the array. 
+          Each value has an index that signals its position. The index starts at 0. That means that if my array has 10 values, the index of the last 
+          value is 9.<br><br>
+        </p>
+
+        <img class="bigger-image" src="../img/arrayExample.jpg" alt="examples of accesing an array using dots and square brackets"><br><br>
+
+        <p>
+          We access the values of an array by calling the array with the index of the value we want to access inside square brackets. Following our 
+          previous example, if I want to know who is the 3rd person in the guest list I will call the array with the corresponding index, in this case,  
+          <span style="font-family: 'Courier New', Courier, monospace;">guests[2]</span> and that will give me the value <span style="font-family: 'Courier New', Courier, monospace;">Lou</span>.<br><br>
+        </p>
+
+        <h3>Explain what functions are and why they are helpful.</h3>
+      
+        <p>
+          In Javascript a function is a block of code intended to do a particular task. Functions take an input (a set of statements), and return an 
+          output (a result). Functions are an essential part of coding as they can perform highly complex tasks when they are triggered.
+        </p>
+
+        <p>
+          In order to use a function you need to define (declare) it first. You define a function by using the keyword function followed by the name 
+          the function will take, a parameter enclosed in parenthesis (the parameter can be one value or a list of values separated by a comma, or it 
+          can even be empty), and finally the statements enclosed in curly brackets.
+        </p>
+
+        <p>
+          Once your function is defined you can execute it as many times as you want by calling it back whenever you need it. 
+        </p>
+
+        <img class="bigger-image" src="../img/functionExample.jpg" alt="function syntax and example"><br><br>
+    
+      </article>
+
+    </main>
+
+    <footer class="footer-article">Kōtare 2022</footer>  
+    <!-- this is a comment. -->
+  
+  </body>
+</html>
