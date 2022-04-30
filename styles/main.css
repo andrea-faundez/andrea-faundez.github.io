@@ -37,7 +37,7 @@ body {
 #body-grid > footer {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  width: 100%;
+  width: 107%;
   text-align: center;
 }
 
@@ -142,6 +142,12 @@ nav li {
 
 .bigger-image {
   width: 65vw;
+  border-radius: 2%;
+  margin-right: 15%;
+}
+
+.biggest-image {
+  width: 75vw;
   border-radius: 2%;
   margin-right: 15%;
 }
@@ -288,4 +294,5 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: -3px;
+  width: 107%;
 }
