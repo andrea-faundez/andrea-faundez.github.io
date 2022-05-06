@@ -283,6 +283,22 @@ ls {
   padding-left: 30px;
 }
 
+table, td, th {
+  border: 1px solid;
+  padding: 5px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table {
+  text-align: center;
+}
+
+
 /** Footer settings **/
 footer {
   background-color:#d7cbd4;
